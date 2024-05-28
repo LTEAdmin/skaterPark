@@ -1,5 +1,6 @@
 Conexion a BBDD correcta
-![image](https://github.com/LTEAdmin/skaterPark/assets/157530292/f0600a39-8e82-489a-bfcf-5f85ebf3e441)
+![image](https://github.com/LTEAdmin/skaterPark/assets/157530292/56a293d7-14f6-4834-ad11-e58a8e9faf1c)
+
 
 
 El servidor se levanta correctamente
