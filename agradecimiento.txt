@@ -1,0 +1,13 @@
+Hago entrega del archivo zip, el cual tiene muy poco avance, di todo lo que pude en los tiempos libres, pero sé que aprendí mucho, me falta terminar de revisar a detalle el modulo 8, lo cual podre realizar mañana y pasado mañana, que laboralmente tengo libre, y a contar del 3 de junio comenzare a realizar todos los desafíos de nuevo.
+Sí mi contrato termina el 2 de junio.
+Agradezco a todos, lo que nos enseñaron, lamento no haber podido asistir mas a clases presénciales, reconozco que yo debo preguntar y ver solo videos a mí me complica.
+
+Nuevamente Muchas gracias.
+
+Albamar, encontré que tienes una pasión por la docencia increíble, sigue con esa chispa que da la juventud, eso nos ayuda mucho a los alumnos, agradezco todos tus consejos.
+
+En todo caso les comento que seguiré desarrollando esta prueba y guardare en GIT:
+
+ https://github.com/LTEAdmin/skaterPark
+
+

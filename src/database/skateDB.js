@@ -1,23 +1,20 @@
-import pkg from "pg";
-import "dotenv/config";
+import dbase from "../config/db.js";
 
-const { Pool } = pkg;
-const { DB_PASSWORD, DB_USER, DB_HOST, DB_DATABASE, DB_PORT } = process.env;
+//funcion para verificar existencia de correo en la BBDD + 
+export function existSkaterQuery(email) {
+  try {
 
-const config = {
-  user: DB_USER,
-  host: DB_HOST,
-  database: DB_DATABASE,
-  password: DB_PASSWORD,
-  port: DB_PORT,
-  allowExitOnIdle: true,
+    const correo = email.toLowerCase()
+    const response = dbase.query(` SELECT * FROM skaters WHERE email = $1", [email]`);
+    if (response.rows.length > 0) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+  catch {
+    console.log("Error al validar existencia de skater");
+  }
+
 };
-const dbase = new Pool(config);
-
-/* const fecha = async () => {
-   const response = await dbase.query("SELECT NOW()");
-   console.log(response.rows); 
- }
-
- fecha();   */
-export default dbase;

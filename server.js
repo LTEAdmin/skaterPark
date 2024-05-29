@@ -2,7 +2,7 @@ import express from "express";
 import path from "path";
 import router from "./src/routers/routes.js";
 import { engine } from "express-handlebars";
-import{ fileUpload } from "express-fileupload";
+import fileUpload  from "express-fileupload";
 
 const app = express();
 const __dirname = import.meta.dirname;
