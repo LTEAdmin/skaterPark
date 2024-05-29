@@ -18,4 +18,8 @@ export function pswdOkQuery(newSkaterPassword) {
         console.log("Error al validar contraseña ingresada de skater");
         return false;
     };
- }
+};
+export const mensaje = (texto) => {
+    var res = windows.alert(texto, "ok");
+    return res;
+};

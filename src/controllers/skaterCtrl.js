@@ -1,15 +1,20 @@
 import { existSkaterQuery } from "../database/skateDB.js";
 import {
     pswdOkQuery,
+    mensaje,
  } from "../database/validaciones.js";
 
 // Al agregar skater nuevo, se debe validar, que no exista un skater con el mismo email y que entregue todos los campos necesario
 export const addSkaterCtrl = async (req, res) => {
+    const { email, nombre, password, anos_experiencia, especialidad } = req.body;
+    mensaje("entre");
     try {
+        
         if (!email || !nombre || !password || !anos_experiencia || !especialidad) {
             return res.status(400).send("Todos los campos son obligatorios");
         }
         else {
+            mensaje(email);
             if (!existSkaterQuery(email)) {
                 return res.status(400).send("El correo ya existe, ya esta registrado este Skater");
             }
