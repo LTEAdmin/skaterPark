@@ -2,6 +2,7 @@ import express from "express";
 import path from "path";
 import router from "./src/routers/routes.js";
 import { engine } from "express-handlebars";
+import{ fileUpload } from "express-fileupload";
 
 const app = express();
 const __dirname = import.meta.dirname;
@@ -26,6 +27,16 @@ app.engine('hbs', engine({
     partialsDir: path.join(__dirname, "./src/views/partials"),
   })
 );
+
+//trabajo con fileupload capturar imagenes
+app.use(
+  fileUpload({
+    limits: { fileSize: 5000000 },
+    abortOnLimit: true,
+    responseOnLimit: "El tamaño de la imagen supera el límite permitido",
+  })
+); 
+
 //escuchar el servidor
 app.listen(
   port,
