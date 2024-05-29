@@ -3,8 +3,11 @@ import {
     homeCtrl,
     registroCtrl,
     loginCtrl,
-    addSkaterCtrl,
  } from "../controllers/home.js";
+import {
+    addSkaterCtrl,
+    
+ } from "../controllers/skaterCtrl.js";
 
 const router = express.Router();
 //const __dirname = import.meta.dirname;
